@@ -246,8 +246,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 992px) {
   #gtco-header.gtco-cover {
-    height: inherit !important;
-    padding: 3em 0 !important;
+    background-size: cover;
   }
 }
 @media screen and (max-width: 480px) {
@@ -296,34 +295,80 @@ h1, h2, h3, h4, h5, h6, figure {
   line-height: 1.7;
 }
 #gtco-header #Left-Para{
-/*  width: 100%;
-  margin-left: unset;
-  height: fit-content;*/
-  position: absolute;
-  margin-left: 560px;
-  margin-top: 180px;
+  float: right;
+  margin-right: -125px;
+  margin-top: -125px;
+  text-align: center;
+  width: 400px
 
 }
-.logo-img img{
-/*  position: absolute;*/
-float: right;
-  width:225px;
-  height: 225px;
-  margin-top: -180px;
-/*  margin-left: 250px;*/
-margin-right: 130px;
+@media screen and (max-width: 1275px) {
+  #gtco-header #Left-Para{
+margin-right: -90px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #gtco-header #Left-Para{
+margin-right: -35px;
+  }
+}
+
+
+
+@media screen and (max-width: 735px) {
+  #gtco-header.gtco-cover{
+/*    height: fit-content;*/
+  }
+  #gtco-header #Left-Para{
+    height: 335px;
+    width: 260px;
+    margin-right: 0;
+  }
+  #Left-Para img{
+    width: 120px !important;
+  }
+  #gtco-header #para-content b{
+    font-size: 16px;
+  }
+
+  #gtco-header #Left-Para #btn-right{
+    margin-top: 0 !important;
+    font-size: 10px !important;
+  }
+}
+
+
+
+@media screen and (max-width: 710px) {
+  #gtco-header #Left-Para{
+    width: 100%;
+    height: fit-content;
+    margin: 0 !important;
+  }
+  #Left-Para img{
+    width: 150px !important;
+  }
+   #gtco-header b{
+    font-size: 20px;
+  }
+  #gtco-header #Left-Para #btn-right{
+    margin-top: 10px !important;
+  }
+}
+#Left-Para img{
+  width:200px;
 }
 #gtco-header #para-content{
-  width: 35%;
+  /*width: 35%;
   margin-left: 60%;
   margin-top: 50px;
 text-align: center;
 height: fit-content;
-cursor: none;
+cursor: none;*/
 }
 #para-content:hover + #btn-right{
   font-size: 30px;
-  margin-left: 66.5%;
+/*  margin-left: 66.5%;*/
 /*  background-color: #f06721 !important;*/
 animation: change-color 4s infinite !important;
 border: unset;
@@ -341,7 +386,7 @@ border: unset;
 }
 #gtco-header #btn-right{
   border-radius: 30px;
-  margin-left: 70%;
+/*  margin-left: 70%;*/
   margin-top: 10px;
   border: solid medium #09C6AB;
 }
@@ -558,11 +603,11 @@ border: unset;
   }
 }
 .gtco-cover.gtco-cover-sm {
-  height: 600px;
+/*  height: 600px;*/
 }
 @media screen and (max-width: 768px) {
   .gtco-cover.gtco-cover-sm {
-    height: 400px;
+/*    height: 400px;*/
   }
 }
 .gtco-cover.gtco-cover-sm .display-t,
@@ -2018,5 +2063,14 @@ border: 1px solid #08a18a;
     font-size: 26px;
   }
 }
-
+@media screen and (max-width: 343px) {
+  #gtco-header #Left-Para #btn-right{
+    margin-top: 0 !important;
+  }
+}
+@media screen and (max-width: 291px) {
+  #Left-Para img{
+    width: 110px !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */

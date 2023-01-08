@@ -309,8 +309,8 @@ background-size: cover;
   line-height: 1.7;
 }
 #gtco-header #Left-Para{
-float: right;
-margin-right: -125px;
+  float: right;
+  margin-right: -125px;
   margin-top: -125px;
   text-align: center;
   width: 400px;
