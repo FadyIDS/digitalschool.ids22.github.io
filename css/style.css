@@ -241,10 +241,27 @@ h1, h2, h3, h4, h5, h6, figure {
 /*  background: #fff;*/
 }
 @media screen and (max-width: 992px) {
+
   #gtco-header.gtco-cover {
-    height: inherit !important;
-    padding: 3em 0 !important;
-  }
+/*    height: inherit !important;*/
+background-size: cover;
+}
+
+
+/*#gtco-header #Left-Para{
+  position: absolute;
+  margin-top: -15px !important;
+  margin-left: 520px !important;
+}
+*/
+
+
+}
+@media screen and (max-width: 991px) {
+  #gtco-header #Left-Para{
+  margin-top: -190px !important;
+}
+
 }
 @media screen and (max-width: 480px) {
   #gtco-header .text-left {
@@ -292,33 +309,81 @@ h1, h2, h3, h4, h5, h6, figure {
   line-height: 1.7;
 }
 #gtco-header #Left-Para{
-/*  width: 100%;
-  margin-left: unset;
-  height: fit-content;*/
-  position: absolute;
-  margin-left: 560px;
-  margin-top: 180px;
-
+float: right;
+margin-right: -125px;
+  margin-top: -125px;
+  text-align: center;
+  width: 400px;
 }
-.logo-img img{
-  position: absolute;
-  width:225px;
-  height: 225px;
-  margin-top: -50px;
-  margin-left: 250px;
+@media screen and (max-width: 1275px) {
+  #gtco-header #Left-Para{
+margin-right: -90px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #gtco-header #Left-Para{
+margin-right: -35px;
+  }
+}
+
+
+
+@media screen and (max-width: 735px) {
+  #gtco-header.gtco-cover{
+    height: fit-content;
+  }
+  #gtco-header #Left-Para{
+    height: 335px;
+    width: 260px;
+    margin-right: 0;
+  }
+  #Left-Para img{
+    width: 120px !important;
+  }
+  #gtco-header b{
+    font-size: 16px;
+  }
+  #gtco-header #Left-Para #btn-right{
+    margin-top: 0 !important;
+    font-size: 10px !important;
+  }
+}
+
+
+
+@media screen and (max-width: 710px) {
+  #gtco-header #Left-Para{
+    width: 100%;
+    height: fit-content;
+    margin: 0 !important;
+  }
+  #Left-Para img{
+    width: 150px !important;
+  }
+   #gtco-header b{
+    font-size: 20px;
+  }
+  #gtco-header #Left-Para #btn-right{
+    margin-top: 10px !important;
+  }
+}
+
+
+#Left-Para img{
+/*  position: absolute;*/
+  width:200px;
+/*  height: 225px;*/
+/*  margin-top: -50px;*/
+/*  margin-left: 250px;*/
 }
 #gtco-header #Left-Para #para-content{
-/*  width: 50%;*/
-  margin-left: 40%;
-/*  background-color: #8c8c8c;*/
-text-align: center;
-cursor: none;
-/*  border-radius: 20px;*/
-/*  border: solid thick #09C6AB;*/
+/*  margin-left: 40%;*/
+  text-align: center;
+  cursor: none;
 }
 #gtco-header #Left-Para #para-content:hover + #btn-right{
   font-size: 35px;
-  margin-left: 50%;
+/*  margin-left: 50%;*/
 /*  background-color: #f06721 !important;*/
 animation: change-color 4s infinite !important;
 border: unset;
@@ -336,7 +401,7 @@ border: unset;
 }
 #gtco-header #Left-Para #btn-right{
   border-radius: 30px;
-  margin-left: 57%;
+/*  margin-left: 57%;*/
   margin-top: 20px;
   border: solid medium #09C6AB;
 
@@ -846,7 +911,7 @@ form label {
   height: 90px;
 /*  border: 1px solid rgba(255, 255, 255, 0.8);*/
 border: 1px solid #08a18a;
-  background: #09C6AB;
+background: #09C6AB;
 }
 #gtco-features .feature-center .icon i {
   color: #fff;
